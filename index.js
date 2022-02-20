@@ -82,7 +82,7 @@ function createAddBookBtn() {
     const addbookBtnElt = document.createElement("button");
     addbookBtnElt.id = "addBookButton";
     addbookBtnElt.className = 'button';
-    addbookBtnElt.textContent = "AJOUTER UN LIVRE";
+    addbookBtnElt.textContent = "Ajouter un livre";
     addbookBtnElt.hidden = false;
     divElt.appendChild(addbookBtnElt);
 }
