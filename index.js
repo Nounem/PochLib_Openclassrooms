@@ -227,7 +227,7 @@ function displayBook(book, id) {
 
     bookmarkImg = document.createElement('img');
     bookmarkImg.id = 'bookmark-img';
-    bookmarkImg.src = 'images/bookmark-solid.svg';
+    bookmarkImg.src = 'images/icons8-bookmark.svg';
     bookMarkContainer.appendChild(bookmarkImg);
 
     addBookmarkListner(book, id);
@@ -316,7 +316,7 @@ function displayBookToPochList(book, id) {
 
     trashElt = document.createElement('img');
     trashElt.id = 'trash-img';
-    trashElt.src = 'images/minus-circle-solid.svg';
+    trashElt.src = 'images/icons8-cancel.svg';
     trashEltContainer.appendChild(trashElt);
 
     addTrashListner(book, idBook);
