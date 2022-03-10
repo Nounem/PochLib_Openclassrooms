@@ -137,6 +137,7 @@ function createAllEventListner() {
 
 }
 
+
 /* FN : display and hide form */
 
 // Hide form
@@ -195,8 +196,11 @@ function bookSearch() {
     const title = document.getElementById('input-title').value;
     const author = document.getElementById('input-author').value;
 
+
     request.onreadystatechange = function() {
+
         if (this.readyState == XMLHttpRequest.DONE && this.status == 200) {
+
 
             let response = JSON.parse(this.response);
 
@@ -208,6 +212,7 @@ function bookSearch() {
                 })
             }
         }
+
     }
     request.open("GET", "https://www.googleapis.com/books/v1/volumes?q=:" + author + title);
     request.send();
